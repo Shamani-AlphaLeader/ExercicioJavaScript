@@ -1,31 +1,32 @@
-let peso = parseFloat(prompt("Coloque o seu peso"))
+let peso = parseFloat(prompt("Informe o seu peso (em kg): "))
 
-let altura = parseFloat(prompt("Coloque a sua altura"))
+let altura = parseFloat(prompt("Informe a sua altura (em metros) "))
 
 let IMC = peso / (altura * altura);
 
-console.log(IMC)
+console.log("Seu IMC e" + IMC.toFixed(2));
+
 if (IMC < 18.5) {
-    alert("esta abaixo do peso")
+    console.log("esta abaixo do peso")
 }
 
 else if (IMC >= 18.5 && IMC >= 24.9) {
-    alert("o peso esta normal")
+    console.log("o peso esta normal")
 }
 
 
 else if (IMC >= 18.5 && IMC >= 29.9) {
-    alert("sobrepeso")
+    console.log("sobrepeso")
 }
 
 else if (IMC >= 30 && IMC >= 34.9) {
-    alert("obesidade de grau 1")
+    console.log("obesidade de grau 1")
 }
 
 else if (IMC >= 35 && IMC >= 39.9) {
-    alert("obesidade de grau 2")
+    console.log("obesidade de grau 2")
 }
 
 else if (IMC >= 40) {
-    alert("obesidade de grau 3")
+    console.log("obesidade de grau 3")
 }
